@@ -1,1 +1,23 @@
-<p>string-interpolation works!</p>
+<mat-card class="mycard">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>Person data</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <p>primeiro none: {{person.firstName}}</p>
+        <p>último nome: {{person.lastName}} </p>
+        <p>idade: {{person.age}} </p>        
+        <p>Endereço: {{person.address}} </p>
+        <p>Resultado: {{100 + 100}} </p>
+
+        <form>
+            <mat-form-field class="example-full-width">
+                <input matInput placeholder="Name" value="{{person.firstName}}">
+            </mat-form-field>
+        </form>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions>
+  </mat-card>
